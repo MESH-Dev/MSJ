@@ -5,13 +5,13 @@ module.exports = function (grunt) {
         concat: {
           css: {
             // add/remove/edit files and order to project needs
-            src: ['assets/css/reset.css', 'assets/css/typography.css', 'assets/css/layout.css','assets/css/transformation.css','assets/css/*.css', '!assets/css/*.min.css', 'assets/css/responsive.css'],
+            src: ['assets/css/reset.css', 'assets/css/typography.css', 'assets/css/layout.css','assets/css/*.css', '!assets/css/*.min.css', 'assets/css/responsive.css'],
             dest: 'assets/prod/production.css'
           },
           js: {
             // add/remove/edit files and order to project needs
             src: ['assets/js/*.js'],
-            dest: 'assets/prod/<%= pkg.name %>.<%= pkg.version %>.js'
+            dest: 'assets/prod/<%= pkg.name %>.js'
           }
         },
         // cssmin - minify production css file created through concat
