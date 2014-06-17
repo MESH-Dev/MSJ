@@ -1,0 +1,101 @@
+/*
+  Color Schemes
+
+    DARK BLUE
+    Wet Asphalt  = #34495e
+    Midnight     = #2c3e50
+
+    PURPLE
+    Amethyst     = #9b59b6
+    Wisteria     = #8e44ad
+
+    BLUE
+    Peter River  = #3498db
+    Belize Hole  = #2980b9
+
+    GREEN
+    Emerald      = #2ecc71
+    Nephritis    = #27ae60
+
+    TEAL
+    Turquoise    = #1abc9c
+    Green Sea    = #16a085
+
+    YELLOW
+    Sun Flower   = #f1c40f
+    Orange       = #f39c12
+
+    ORANGE
+    Carrot       = #e67e22
+    Pumpkin      = #d35400
+
+    RED
+    Alizarin     = #e74c3c
+    Pomegranate  = #c0392b
+
+    WHITE
+    Clouds       = #ecf0f1
+    Silver       = #bdc3c7
+
+    GREY
+    Concrete     = #95a5a6
+    Asbestos     = #7f8c8d
+
+*/
+
+
+/* ==========
+  Common
+========= */
+.container{width:960px;margin:0 auto;}
+img{max-width:100%;height:auto;}
+
+/* ==========
+  Header
+========= */
+header{}
+  header .gutter{padding:20px;}
+  header #logo{width:200px;float:left;}
+
+  header #mainNav{width:600px;float:right;}
+    #mainNav ul{float:left;}
+      #mainNav ul li{float:left;position:relative;}
+        #mainNav ul li a{}
+    #mainNav ul ul{display:none;position:absolute;top:100%;left:0;}
+      #mainNav ul li:hover ul{display:block;}
+      #mainNav ul ul li{display:block;width:100%;float:left;}
+
+
+/* ==========
+  Index
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Footer
+========= */
