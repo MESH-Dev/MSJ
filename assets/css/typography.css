@@ -113,7 +113,7 @@ body {
 	-o-hyphens: auto;
 	hyphens: auto;
 	word-wrap: break-word;
-	color: #95a5a6;
+	color: #34495e;
 }
 
 
@@ -145,9 +145,8 @@ h6 {
 	line-height: 1;
 	margin-top: 0;
 	text-rendering: optimizeLegibility;
-	color: #7f8c8d;
+	color: #34495e;
 }
-
 
 /**
 * Extend included classes on any element of your
@@ -246,7 +245,7 @@ h6,
 /**
  *
  * =======================================================================
-	 Paragraphs and Indentation
+	 Paragraphs and Anchors
  * =======================================================================
  */
 
@@ -254,11 +253,9 @@ p {
 	margin: auto auto 1.5em; /* bottom margin for paragraphs */
 }
 
-p + p {
-	text-indent: 1.5em; /* indent subsequent paragraphs */
-	margin-top: -1.5em; /* no top margin on subsequent paragraphs */
-}
-
+a{text-decoration:none;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;display:inline-block;}
+  a:hover{opacity:0.7;}
+  p > a{text-decoration:underline;}
 
 /**
  *

@@ -10,7 +10,15 @@
 
   //theme supports
   add_theme_support('post-thumbnails');
-  add_theme_support('custom-header');
+  $defaults = array(
+    'flex-height'   => true,
+    'flex-width'    => true,
+    'height'        => 100,
+    'width'         => 200,
+    'default-image' => get_template_directory_uri() . '/assets/img/logo.gif',
+    'header-text'   => false
+  );
+  add_theme_support('custom-header', $defaults);
   add_theme_support('custom-background');
   add_theme_support('html5');
   add_theme_support('automatic-feed-links');
@@ -35,20 +43,15 @@
   //editor style
   add_editor_style('assets/wp-admin/custom-editor-style.css');
 
-
   //login page style
   function WPS_loginCSS() {
-	   echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/wp-login.css"/>';
-  }
-  add_action('login_head', 'WPS_loginCSS');
-
+	   echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/assets/img/wp-login.css"/>';
+  } add_action('login_head', 'WPS_loginCSS');
 
   //footer attribution
   function WPS_footer_admin () {
 	   echo 'Theme developed by <a href="http://pateason.com">Pat Eason</a>.';
-  }
-  add_filter('admin_footer_text', 'WPS_footer_admin');
-
+  } add_filter('admin_footer_text', 'WPS_footer_admin');
 
   //disable code editors
   define('DISALLOW_FILE_EDIT', true);
