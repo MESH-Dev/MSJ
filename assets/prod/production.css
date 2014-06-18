@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	/*line-height: 1;*/
 }
 ol, ul {
 	list-style: none;
@@ -751,7 +751,25 @@ header{}
 /* ==========
   front-page
 ========= */
+body.home #contentPrimary{width:75%;float:left;}
+  body.home #contentPrimary > .gutter{}
 
+  .post-entry{margin:0 0 50px;width:100%;float:left;}
+    .post-entry .gutter{}
+    .post-entry .post-entry-date{font-size:12px;}
+    .post-entry .post-entry-excerpt, .post-entry .post-entry-content{width:100%;}
+    .post-entry .post-meta{font-size:12px;}
+      .post-meta > *{display:inline;padding:0 10px 0 0;margin:0 10px 0 0;border-right:1px solid #bdc3c7;}
+      .post-meta > *:last-child{padding:0 10px 0 0;margin:0 10px 0 0;border-right:1px solid #bdc3c7;}
+      .post-meta .post-meta-author{}
+      .post-meta .post-meta-comments{}
+      .post-meta .post-meta-category{}
+      .post-meta .post-meta-tags{}
+      .post-meta i{font-size:14px;}
+
+
+body.home #contentSecondary{width:25%;float:right;}
+  body.home #contentPrimary .gutter{}
 
 
 /* ==========
