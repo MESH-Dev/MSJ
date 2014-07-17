@@ -9,9 +9,11 @@
 <header>
   <div class="container">
     <div class="gutter cf">
+
       <div id="logo">
           <a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
       </div>
+
       <div id="mainNav">
         <?php if(has_nav_menu('main_nav')){
             $defaults = array(
@@ -36,6 +38,14 @@
             echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
           } ?>
       </div>
+
+      <div id="contact-tab">
+        <div class="gutter">
+          <span class="top">Contact Us</span>
+          <span class="bottom">T. 304-344-3144<br>Toll Free 1-800-319-7132</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </header>
