@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         uglify: {
           js: {
             files: {
-              'assets/prod/<%= pkg.name %>.js': ['assets/prod/<%= pkg.name %>.js']
+              'assets/prod/<%= pkg.name %>.min.js': ['assets/prod/<%= pkg.name %>.js']
             }
           }
         },
@@ -38,6 +38,10 @@ module.exports = function (grunt) {
           cssmin: {
             files: ['assets/prod/production.css'],
             tasks: ['cssmin']
+          },
+          jsconcat:{
+            files: ['assets/js/*.js','!assets/js/*.min.js'],
+            tasks: ['concat']
           },
           jsuglify:{
             files: ['assets/js/*.js'],

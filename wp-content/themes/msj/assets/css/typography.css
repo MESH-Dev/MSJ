@@ -103,7 +103,7 @@ p + .drop-cap {
  */
 
 html {
-	font: normal 87.5%/1.65 'Open Sans',sans-serif; /* base font size 18px with 1.65 line-height */
+	font: normal 87.5%/1.65 lexia,sans-serif; /* base font size 18px with 1.65 line-height */
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -115,7 +115,7 @@ body {
 	-o-hyphens: auto;
 	hyphens: auto;
 	word-wrap: break-word;
-	color: #34495e;
+	color: #fff;
 }
 
 
