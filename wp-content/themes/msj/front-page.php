@@ -49,19 +49,19 @@
             <div class="expand-pane blue">
               <span class="title">Case Studies</span>
               <div class="expansion cf">
-                <div class="exp-col a" data-next="0">
+                <div class="exp-col a" data-next="1">
                   <div class="gutter">
                     <span class="story-title">The Jones' Story</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stArrow.png" />
                   </div>
                 </div>
-                <div class="exp-col b" data-next="1">
+                <div class="exp-col b" data-next="2">
                   <div class="gutter">
                     <span class="story-title">Bob's Story</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stArrow.png" />
                   </div>
                 </div>
-                <div class="exp-col c" data-next="2">
+                <div class="exp-col c" data-next="3">
                   <div class="gutter">
                     <span class="story-title">The Smiths' Story</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stArrow.png" />
@@ -100,7 +100,7 @@
               <div class="home-story-contact-bottom">
                 Call us now and let us help!<br>304-344-3144
               </div>
-              <div class="home-story-next" data-next="1">
+              <div class="home-story-next" data-next="2">
                 <span>Next Case Study</span>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/storyNext.png" />
               </div>
@@ -140,7 +140,7 @@
               <div class="home-story-contact-bottom">
                 Call us now and let us help!<br>304-344-3144
               </div>
-              <div class="home-story-next" data-next="2">
+              <div class="home-story-next" data-next="3">
                 <span>Next Case Study</span>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/storyNext.png" />
               </div>
@@ -180,7 +180,7 @@
               <div class="home-story-contact-bottom">
                 Call us now and let us help!<br>304-344-3144
               </div>
-              <div class="home-story-next" data-next="0">
+              <div class="home-story-next" data-next="1">
                 <span>Next Case Study</span>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/storyNext.png" />
               </div>
