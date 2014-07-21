@@ -99,8 +99,8 @@
   define('DISALLOW_FILE_EDIT', true);
 
   //homepage title functions
-  add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
-  function baw_hack_wp_title_for_home( $title ){
+  add_filter( 'wp_title', 'MSJ_hometitle' );
+  function MSJ_hometitle( $title ){
     if( empty( $title ) && ( is_home() || is_front_page() ) ) {
       return __( 'Home', 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
     } return $title;

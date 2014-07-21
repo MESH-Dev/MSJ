@@ -67,7 +67,7 @@ header{}
       #mainNav ul li{display:inline-block;position:relative;padding: 0 60px;}
         #mainNav ul li a{color:#3e3e3e;position:relative;font: 17px/12px ronnia;text-transform: uppercase;}
           #mainNav ul li a:hover:before{content:'=';color:#e46e45;position:absolute;top:0;left: -21px;font: 28px/12px ronnia;}
-    #mainNav ul ul{display:none;position:absolute;left:0;top:100%;}
+    #mainNav ul ul{display:none;}
 
   header #contact-tab{position: absolute;top: 0;right: -52px;color: #fff;background: #e46e45;width: 153px;height: 89px;font:11px/11px ronnia;}
     #contact-tab .gutter{padding:23px 11px;}
@@ -79,8 +79,6 @@ header{}
 /* ==========
   Index
 ========= */
-#content{}
-  #content .container > .gutter{padding:20px;}
 
 
 /* ==========
@@ -194,9 +192,30 @@ header{}
 
 
 /* ==========
-  Common
+  Page.php
 ========= */
+#content{}
+  #content .container{width:880px;}
+  #content .container > .gutter{padding:39px 0 0 0;}
+  #content #contentPrimary{width: 20.6%;float: left;margin: 0 2% 0 0;}
+    #content #contentPrimary .gutter{padding:0;}
+    #content #contentPrimary ul.menu{}
+      #content #contentPrimary ul.menu li{display:none;}
+        #content #contentPrimary ul.menu li.current-menu-item, #content #contentPrimary ul.menu li.current-menu-ancestor{display:block;}
+          #content #contentPrimary ul.menu li.current-menu-item > a, #content #contentPrimary ul.menu li.current-menu-ancestor > a{display:none;}
+        #content #contentPrimary ul.menu li.current-menu-item li, #content #contentPrimary ul.menu li.current-menu-ancestor li{display:block;}
+        #content #contentPrimary ul.menu li a{color: #323232;font: 13px/13px ronnia;float: left;width: 90%;padding: 10px 5% 9px;margin: 0 0 10px;text-transform: uppercase;}
+          #content #contentPrimary ul.menu li a:hover, #content #contentPrimary ul.menu li.current-menu-item > a{color:#fff;}
+        body.page-template-default #contentPrimary ul.menu li a{background:#7f97b9;}
 
+  #content #contentSecondary{float: left;width: 43.3%;margin: 0 2.2% 0 0;}
+    #content #contentSecondary .gutter{padding:0;}
+    #content #contentSecondary h2.page-title{color: #fff;font: 36px/25px lexia;font-style: italic;margin:0 0 42px;}
+    #content #contentSecondary .page-intro{font: 22px/30px lexia;font-style: italic;margin:0 0 21px;}
+      body.page-template-default #content #contentSecondary .page-intro{color:#b5d6ff;}
+
+  #content #contentTertiary{width: 31.9%;float: left;}
+    #content #contentTertiary .gutter{padding:0;}
 
 
 /* ==========
