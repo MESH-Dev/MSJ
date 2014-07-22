@@ -47,7 +47,7 @@
 /* ==========
   Common
 ========= */
-html, body{background:url(../img/bg.jpg) top center;}
+html, body{background:url(../img/bg.jpg) top center;background-size:cover;}
 .container{width:960px;margin:0 auto;}
 img{max-width:100%;height:auto;}
 
