@@ -1,4 +1,4 @@
-<?php /* Template Name: Work */ get_header(); ?>
+<?php /* Template Name: Help */ get_header(); ?>
 <?php if(have_posts()){while(have_posts()){the_post(); ?>
 <section id="content" class="cf">
   <div class="container cf">
@@ -29,18 +29,9 @@
             } ?>
         </div>
       </div>
-
       <div id="secondaryCont">
         <div id="titleCont">
           <h2 class="page-title"><?php the_title(); ?></h2>
-        </div>
-        <div id="extraCont">
-          <div class="work-banner">
-            <img src="<?php the_field('banner'); ?>" />
-          </div>
-          <div class="work-quote">
-            "<?php the_field('quote'); ?>" <span class="work-attribution"> — <?php the_field('attribution'); ?></span>
-          </div>
         </div>
         <div id="contentSecondary">
           <div class="gutter">
@@ -61,7 +52,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>

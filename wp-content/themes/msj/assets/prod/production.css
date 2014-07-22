@@ -670,6 +670,9 @@ abbr[title]:hover {
  *
  */
 
+em,i{font-style:italic;}
+strong,b{font-weight:bold;}
+
 /*
   Color Schemes
 
@@ -880,6 +883,7 @@ header{}
           #content #contentPrimary ul.menu li a:hover, #content #contentPrimary ul.menu li.current-menu-item > a{color:#fff;}
         body.page-template-default #contentPrimary ul.menu li a{background:#7f97b9;}
         body.page-template-templateswork-tpl-php #contentPrimary ul.menu li a{background:#6eb0bc;}
+        body.page-template-templateshelp-tpl-php #contentPrimary ul.menu li a{background:#8e859e;}
 
   #content #secondaryCont{width:77.4%;float:right;}
 
@@ -904,6 +908,13 @@ header{}
       body.page-template-templateswork-tpl-php #content #contentSecondary h4,
       body.page-template-templateswork-tpl-php #content #contentSecondary h5,
       body.page-template-templateswork-tpl-php #content #contentSecondary h6{color:#85d5e6;}
+      body.page-template-templateshelp-tpl-php #content #contentSecondary .page-intro,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h1,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h2,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h3,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h4,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h5,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h6{color:#d6caeb;}
 
     #contentSecondary h1{}
     #contentSecondary h2{}
@@ -912,16 +923,21 @@ header{}
     #contentSecondary h5{}
     #contentSecondary h6{}
 
+    #content #contentSecondary p + ul{margin-top:-1.5em;}
+    #content #contentSecondary ul{margin:0 0 1.5em;}
+      #content #contentSecondary ul li{list-style-image:url(../img/contentLiCaret.png);list-style-position:inside;}
+
   #extraCont{float: left;width: 100%;margin: 0 0 25px;padding: 0 0 18px;border-bottom: 7px solid #fff;}
     #extraCont .work-banner{margin:0 0 7px;}
     #extraCont .work-quote{font:16px/23px ronnia;word-spacing:0.1em;}
     #extraCont .work-attribution{}
       body.page-template-templateswork-tpl-php #extraCont .work-attribution{color:#85d5e6;}
 
-  #content #contentTertiary{width: 41.1%;float: left;}
+  #content #contentTertiary{width: 41.1%;float: left;font:13px/19px ronnia;}
     #content #contentTertiary > .gutter{padding:0;}
     #contentTertiary .sidebar-pane{background:#7f97b9;color:#323232;margin:0 0 15px;}
       body.page-template-templateswork-tpl-php  #contentTertiary .sidebar-pane{background:#6eb0bc;}
+      body.page-template-templateshelp-tpl-php  #contentTertiary .sidebar-pane{background:#8e859e;}
       #contentTertiary .sidebar-pane h1,#contentTertiary .sidebar-pane h2,#contentTertiary .sidebar-pane h3,#contentTertiary .sidebar-pane h4,#contentTertiary .sidebar-pane h5,#contentTertiary .sidebar-pane h6{color:#323232;}
     #contentTertiary .sidebar-pane .gutter{padding:18px 20px;}
     #contentTertiary ul{list-style-image:url(../img/sideLiCaret.png);list-style-position:inside;}

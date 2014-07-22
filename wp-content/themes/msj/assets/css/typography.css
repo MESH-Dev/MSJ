@@ -526,3 +526,6 @@ abbr[title]:hover {
  * Extend this object into your markup.
  *
  */
+
+em,i{font-style:italic;}
+strong,b{font-weight:bold;}
