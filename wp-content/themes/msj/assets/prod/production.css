@@ -864,7 +864,7 @@ header{}
 
 
 /* ==========
-  Page.php
+  Page
 ========= */
 #content{}
   #content .container{width:880px;}
@@ -879,15 +879,60 @@ header{}
         #content #contentPrimary ul.menu li a{color: #323232;font: 13px/13px ronnia;float: left;width: 90%;padding: 10px 5% 9px;margin: 0 0 10px;text-transform: uppercase;}
           #content #contentPrimary ul.menu li a:hover, #content #contentPrimary ul.menu li.current-menu-item > a{color:#fff;}
         body.page-template-default #contentPrimary ul.menu li a{background:#7f97b9;}
+        body.page-template-templateswork-tpl-php #contentPrimary ul.menu li a{background:#6eb0bc;}
 
-  #content #contentSecondary{float: left;width: 43.3%;margin: 0 2.2% 0 0;}
+  #content #secondaryCont{width:77.4%;float:right;}
+
+  #content #titleCont{float:left;width:100%;}
+    #content #titleCont h2.page-title{color: #fff;font: 36px/25px lexia;font-style: italic;margin:0 0 42px;}
+    body.page-template-templateswork-tpl-php #content #titleCont h2.page-title{margin:0 0 50px;}
+
+  #content #contentSecondary{float: left;width:56.7%;margin: 0 2.2% 0 0;}
     #content #contentSecondary .gutter{padding:0;}
-    #content #contentSecondary h2.page-title{color: #fff;font: 36px/25px lexia;font-style: italic;margin:0 0 42px;}
     #content #contentSecondary .page-intro{font: 22px/30px lexia;font-style: italic;margin:0 0 21px;}
-      body.page-template-default #content #contentSecondary .page-intro{color:#b5d6ff;}
+      body.page-template-default #content #contentSecondary .page-intro,
+      body.page-template-default #content #contentSecondary h1,
+      body.page-template-default #content #contentSecondary h2,
+      body.page-template-default #content #contentSecondary h3,
+      body.page-template-default #content #contentSecondary h4,
+      body.page-template-default #content #contentSecondary h5,
+      body.page-template-default #content #contentSecondary h6{color:#b5d6ff;}
+      body.page-template-templateswork-tpl-php #content #contentSecondary .page-intro,
+      body.page-template-templateswork-tpl-php #content #contentSecondary h1,
+      body.page-template-templateswork-tpl-php #content #contentSecondary h2,
+      body.page-template-templateswork-tpl-php #content #contentSecondary h3,
+      body.page-template-templateswork-tpl-php #content #contentSecondary h4,
+      body.page-template-templateswork-tpl-php #content #contentSecondary h5,
+      body.page-template-templateswork-tpl-php #content #contentSecondary h6{color:#85d5e6;}
 
-  #content #contentTertiary{width: 31.9%;float: left;}
-    #content #contentTertiary .gutter{padding:0;}
+    #contentSecondary h1{}
+    #contentSecondary h2{}
+    #contentSecondary h3{font: 16px/16px lexia;font-style: italic;margin: 0 0 3px;}
+    #contentSecondary h4{}
+    #contentSecondary h5{}
+    #contentSecondary h6{}
+
+  #extraCont{float: left;width: 100%;margin: 0 0 25px;padding: 0 0 18px;border-bottom: 7px solid #fff;}
+    #extraCont .work-banner{margin:0 0 7px;}
+    #extraCont .work-quote{font:16px/23px ronnia;word-spacing:0.1em;}
+    #extraCont .work-attribution{}
+      body.page-template-templateswork-tpl-php #extraCont .work-attribution{color:#85d5e6;}
+
+  #content #contentTertiary{width: 41.1%;float: left;}
+    #content #contentTertiary > .gutter{padding:0;}
+    #contentTertiary .sidebar-pane{background:#7f97b9;color:#323232;margin:0 0 15px;}
+      body.page-template-templateswork-tpl-php  #contentTertiary .sidebar-pane{background:#6eb0bc;}
+      #contentTertiary .sidebar-pane h1,#contentTertiary .sidebar-pane h2,#contentTertiary .sidebar-pane h3,#contentTertiary .sidebar-pane h4,#contentTertiary .sidebar-pane h5,#contentTertiary .sidebar-pane h6{color:#323232;}
+    #contentTertiary .sidebar-pane .gutter{padding:18px 20px;}
+    #contentTertiary ul{list-style-image:url(../img/sideLiCaret.png);list-style-position:inside;}
+      #contentTertiary ul li{font:12px/19px ronnia;margin: 0 0 19px;letter-spacing: 0.015em;word-spacing: 0.2em;}
+
+    #contentTertiary h1{}
+    #contentTertiary h2{}
+    #contentTertiary h3{font: 16px/23px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 24px;}
+    #contentTertiary h4{}
+    #contentTertiary h5{}
+    #contentTertiary h6{}
 
 
 /* ==========
