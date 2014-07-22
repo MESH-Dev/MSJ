@@ -66,7 +66,7 @@ header{}
     #mainNav ul{width:100%;text-align:center;}
       #mainNav ul li{display:inline-block;position:relative;padding: 0 60px;}
         #mainNav ul li a{color:#3e3e3e;position:relative;font: 17px/12px ronnia;text-transform: uppercase;}
-          #mainNav ul li a:hover:before{content:'=';color:#e46e45;position:absolute;top:0;left: -21px;font: 28px/12px ronnia;}
+          #mainNav ul li a:hover:before, #mainNav ul li.current-menu-item a:before, #mainNav ul li.current-menu-parent a:before{content:'=';color:#e46e45;position:absolute;top:0;left: -21px;font: 28px/12px ronnia;}
     #mainNav ul ul{display:none;}
 
   header #contact-tab{position: absolute;top: 0;right: -52px;color: #fff;background: #e46e45;width: 153px;height: 89px;font:11px/11px ronnia;}
@@ -202,7 +202,7 @@ header{}
     #content #contentPrimary ul.menu{}
       #content #contentPrimary ul.menu li{display:none;}
         #content #contentPrimary ul.menu li.current-menu-item, #content #contentPrimary ul.menu li.current-menu-ancestor{display:block;}
-          #content #contentPrimary ul.menu li.current-menu-item > a, #content #contentPrimary ul.menu li.current-menu-ancestor > a{display:none;}
+          #content #contentPrimary ul.menu > li.current-menu-item > a, #content #contentPrimary ul.menu li.current-menu-ancestor > a{display:none;}
         #content #contentPrimary ul.menu li.current-menu-item li, #content #contentPrimary ul.menu li.current-menu-ancestor li{display:block;}
         #content #contentPrimary ul.menu li a{color: #323232;font: 13px/13px ronnia;float: left;width: 90%;padding: 10px 5% 9px;margin: 0 0 10px;text-transform: uppercase;}
           #content #contentPrimary ul.menu li a:hover, #content #contentPrimary ul.menu li.current-menu-item > a{color:#fff;}
@@ -225,32 +225,47 @@ header{}
       body.page-template-default #content #contentSecondary h3,
       body.page-template-default #content #contentSecondary h4,
       body.page-template-default #content #contentSecondary h5,
-      body.page-template-default #content #contentSecondary h6{color:#b5d6ff;}
+      body.page-template-default #content #contentSecondary h6,
+      body.page-template-default #content #contentSecondary a{color:#b5d6ff;}
       body.page-template-templateswork-tpl-php #content #contentSecondary .page-intro,
       body.page-template-templateswork-tpl-php #content #contentSecondary h1,
       body.page-template-templateswork-tpl-php #content #contentSecondary h2,
       body.page-template-templateswork-tpl-php #content #contentSecondary h3,
       body.page-template-templateswork-tpl-php #content #contentSecondary h4,
       body.page-template-templateswork-tpl-php #content #contentSecondary h5,
-      body.page-template-templateswork-tpl-php #content #contentSecondary h6{color:#85d5e6;}
+      body.page-template-templateswork-tpl-php #content #contentSecondary h6,
+      body.page-template-templateswork-tpl-php #content #contentSecondary a{color:#85d5e6;}
       body.page-template-templateshelp-tpl-php #content #contentSecondary .page-intro,
       body.page-template-templateshelp-tpl-php #content #contentSecondary h1,
       body.page-template-templateshelp-tpl-php #content #contentSecondary h2,
       body.page-template-templateshelp-tpl-php #content #contentSecondary h3,
       body.page-template-templateshelp-tpl-php #content #contentSecondary h4,
       body.page-template-templateshelp-tpl-php #content #contentSecondary h5,
-      body.page-template-templateshelp-tpl-php #content #contentSecondary h6{color:#d6caeb;}
+      body.page-template-templateshelp-tpl-php #content #contentSecondary h6,
+      body.page-template-templateshelp-tpl-php #content #contentSecondary a{color:#d6caeb;}
 
-    #contentSecondary h1{}
-    #contentSecondary h2{}
-    #contentSecondary h3{font: 16px/16px lexia;font-style: italic;margin: 0 0 3px;}
-    #contentSecondary h4{}
-    #contentSecondary h5{}
-    #contentSecondary h6{}
+    #content #contentSecondary h1{font: 20px/20px lexia;font-style: italic;margin: 0 0 6px;}
+    #content #contentSecondary h2{font: 18px/18px lexia;font-style: italic;margin: 0 0 5px;}
+    #content #contentSecondary h3{font: 16px/16px lexia;font-style: italic;margin: 0 0 3px;}
+    #content #contentSecondary h4{font: 14px/14px lexia;font-style: italic;margin: 0 0 2px;}
+    #content #contentSecondary h5{font: 12px/12px lexia;font-style: italic;margin: 0 0 1px;}
+    #content #contentSecondary h6{font: 10px/10px lexia;font-style: italic;margin: 0 0 0px;}
 
     #content #contentSecondary p + ul{margin-top:-1.5em;}
     #content #contentSecondary ul{margin:0 0 1.5em;}
       #content #contentSecondary ul li{list-style-image:url(../img/contentLiCaret.png);list-style-position:inside;}
+    #content #contentSecondary ol{margin:0 0 1.5em;}
+      #content #contentSecondary ol li{list-style-position:inside;list-style-type:decimal;}
+
+    #content #contentSecondary table{width:100%;font-family:ronnia;color:#323232;margin:0 0 1.5em;}
+      #content #contentSecondary table thead{background:#dbdbdb;}
+        #content #contentSecondary table th{padding:10px;font-weight:bold;border:1px solid #dbdbdb;}
+      #content #contentSecondary tbody{}
+        #content #contentSecondary tbody tr{}
+          #content #contentSecondary tbody tr td{background:#f3f3f3;border:1px solid #dbdbdb;padding:5px;}
+      #content #contentSecondary tfoot{background:#dbdbdb;}
+        #content #contentSecondary tfoot td{padding:10px;font-weight:bold;border:1px solid #dbdbdb;}
+
 
   #extraCont{float: left;width: 100%;margin: 0 0 25px;padding: 0 0 18px;border-bottom: 7px solid #fff;}
     #extraCont .work-banner{margin:0 0 7px;}
@@ -264,16 +279,30 @@ header{}
       body.page-template-templateswork-tpl-php  #contentTertiary .sidebar-pane{background:#6eb0bc;}
       body.page-template-templateshelp-tpl-php  #contentTertiary .sidebar-pane{background:#8e859e;}
       #contentTertiary .sidebar-pane h1,#contentTertiary .sidebar-pane h2,#contentTertiary .sidebar-pane h3,#contentTertiary .sidebar-pane h4,#contentTertiary .sidebar-pane h5,#contentTertiary .sidebar-pane h6{color:#323232;}
-    #contentTertiary .sidebar-pane .gutter{padding:18px 20px;}
-    #contentTertiary ul{list-style-image:url(../img/sideLiCaret.png);list-style-position:inside;}
-      #contentTertiary ul li{font:12px/19px ronnia;margin: 0 0 19px;letter-spacing: 0.015em;word-spacing: 0.2em;}
+    #content #contentTertiary .sidebar-pane .gutter{padding:18px 20px;}
+    #content #contentTertiary ul{list-style-image:url(../img/sideLiCaret.png);list-style-position:inside;}
+      #content #contentTertiary ul li{font:12px/19px ronnia;margin: 0 0 19px;letter-spacing: 0.015em;word-spacing: 0.2em;}
 
-    #contentTertiary h1{}
-    #contentTertiary h2{}
-    #contentTertiary h3{font: 16px/23px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 24px;}
-    #contentTertiary h4{}
-    #contentTertiary h5{}
-    #contentTertiary h6{}
+    #content #contentTertiary h1{font: 20px/27px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 28px;}
+    #content #contentTertiary h2{font: 18px/25px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 26px;}
+    #content #contentTertiary h3{font: 16px/23px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 24px;}
+    #content #contentTertiary h4{font: 14px/21px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 22px;}
+    #content #contentTertiary h5{font: 12px/19px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 20px;}
+    #content #contentTertiary h6{font: 10px/17px ronnia;text-transform: uppercase;letter-spacing: 0.05em;margin: 0 0 18px;}
+
+    #content #contentTertiary ol{margin:0 0 1.5em;}
+      #content #contentTertiary ol li{list-style-position:inside;list-style-type:decimal;font: 12px/19px ronnia;margin: 0 0 19px;letter-spacing: .015em;word-spacing: .2em;}
+
+    #content #contentTertiary table{width:100%;font-family:ronnia;color:#323232;margin:0 0 1.5em;}
+      #content #contentTertiary table thead{background:#dbdbdb;}
+        #content #contentTertiary table th{padding:10px;font-weight:bold;border:1px solid #dbdbdb;}
+      #content #contentTertiary tbody{}
+        #content #contentTertiary tbody tr{}
+          #content #contentTertiary tbody tr td{background:#f3f3f3;border:1px solid #dbdbdb;padding:5px;}
+      #content #contentTertiary tfoot{background:#dbdbdb;}
+        #content #contentTertiary tfoot td{padding:10px;font-weight:bold;border:1px solid #dbdbdb;}
+
+    #content #contentTertiary a{color:#fff;}
 
 
 /* ==========

@@ -425,6 +425,8 @@ abbr[title]:hover {
  *
  */
 
+blockquote{font:16px/18px ronnia;font-style:italic;width:90%;margin:0 auto;}
+
 .blockquote p:last-of-type {
 	margin-bottom: -0.825em;
 }
