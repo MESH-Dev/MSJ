@@ -16,6 +16,20 @@ jQuery(document).ready(function($){
   });
 
   //Home Story slide and layout
+  function logoSlide(hovID){
+    var newPos = ++hovID*399;
+    $('#showTrack').stop().animate({
+      top:-newPos,
+    },300);
+  }
+  $('.expansion .exp-col').hover(function(){
+    logoSlide($(this).index());
+  },function(){
+    $('#showTrack').stop().animate({
+      top:0,
+    },300);
+  });
+
   function resizeScrollCont(){
     var curDiv = $('#scrollCont').attr('data-div');
     $('body.home #scrollCont').animate({

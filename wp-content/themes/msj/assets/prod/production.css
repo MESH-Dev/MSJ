@@ -767,9 +767,11 @@ header{}
 
 #home-intro .container > .gutter {padding:0 40px 0 39px;}
 
-#home-intro #contentPrimary{width: 399px;float: left;height: 399px;overflow: hidden;border-radius: 399px;position:relative;margin:0 0 0 27px;}
+#home-intro #contentPrimary{width: 399px;float: left;height: 399px;overflow: hidden;border-radius: 399px;position:relative;margin:0 0 0 27px;position:relative;}
   #home-intro #contentPrimary #logo-overlay{position:absolute;z-index:10;top:0;left:0;height:100%;width:100%;background:url(../img/logo-overlay.png) center center no-repeat;}
   #home-intro #contentPrimary > .gutter{}
+    #home-intro #contentPrimary #showTrack{position:absolute;}
+    #home-intro #contentPrimary #showTrack > *{height:399px;width:399px;}
 
   .post-entry{margin:0 0 50px;width:100%;float:left;}
     .post-entry .gutter{}

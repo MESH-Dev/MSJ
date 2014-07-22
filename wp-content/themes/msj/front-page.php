@@ -8,10 +8,12 @@
 
           <div id="contentPrimary">
             <div id="logo-overlay"></div>
-            <div id="s1"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-1.png" /></div>
-            <div id="s2"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-2.png" /></div>
-            <div id="s3"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-3.png" /></div>
-            <div id="s4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-4.png" /></div>
+            <div id="showTrack">
+              <div id="s1"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-1.png" /></div>
+              <div id="s2"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-2.png" /></div>
+              <div id="s3"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-4.png" /></div>
+              <div id="s4"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ls-3.png" /></div>
+            </div>
           </div>
 
           <div id="contentSecondary">
