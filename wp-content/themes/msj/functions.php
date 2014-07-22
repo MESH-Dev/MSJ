@@ -1,4 +1,21 @@
 <?php
+  //Cycle
+  function cycle($first_value, $values = '*') {
+    static $count = array();
+    $values = func_get_args();
+    $name = 'default';
+    $last_item = end($values);
+    if( substr($last_item, 0, 1) === ':' ) {
+      $name = substr($last_item, 1);
+      array_pop($values);
+    }
+    if( !isset($count[$name]) )
+      $count[$name] = 0;
+    $index = $count[$name] % count($values);
+    $count[$name]++;
+    return $values[$index];
+  }
+
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function MSJ_scripts() {
     wp_enqueue_script('typekit-lib','//use.typekit.net/xcm6wss.js');

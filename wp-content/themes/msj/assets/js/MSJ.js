@@ -29,7 +29,6 @@ jQuery(document).ready(function($){
       top:0,
     },300);
   });
-
   function resizeScrollCont(){
     var curDiv = $('#scrollCont').attr('data-div');
     $('body.home #scrollCont').animate({
@@ -38,7 +37,6 @@ jQuery(document).ready(function($){
   }
   var curDiv = $('#scrollCont').attr('data-div');
   $('body.home #scrollCont').height($('#scrollJack > *:eq('+curDiv+')').outerHeight());
-
   function nextStory(nextID){
     var nextID = parseInt(nextID);
     if(nextID != 0){
@@ -58,10 +56,28 @@ jQuery(document).ready(function($){
   $('.exp-col,.home-story-next').click(function(){
     nextStory($(this).attr('data-next'));
   });
-
   $('body.home a[href="'+MSJ.home_url+'"]').click(function(e){
     e.preventDefault();
     nextStory(0);
+  });
+
+  //Staff
+  $(document).on('click','.staff-member:not(.active)',function(){
+    console.log('triggered');
+    //set active
+    $('.staff-member').removeClass('active');
+    $(this).addClass('active');
+
+    //clone content
+    var content = $(this).find('.staff-member-bio').text();
+    $(this).parent().find('.staff-exp .gutter').text(content);
+
+    //trigger section
+    if(!$(this).parent().find('.staff-exp').is(':visible')){
+      $('.staff-exp').slideUp(300);
+      $(this).parent().find('.staff-exp').slideDown(300);
+    }
+
   });
 
 });
