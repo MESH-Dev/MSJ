@@ -19,6 +19,7 @@
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function MSJ_scripts() {
     wp_enqueue_script('typekit-lib','//use.typekit.net/xcm6wss.js');
+    wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
   	wp_enqueue_style( 'MSJ-style', get_template_directory_uri().'/assets/prod/production.min.css' );
   	wp_enqueue_script( 'MSJ-script', get_template_directory_uri().'/assets/prod/MSJ.min.js', array('jquery'), '1.0.0', true );
     $translation_array = array(
@@ -26,8 +27,6 @@
       'ajax_url' => admin_url('admin-ajax.php')
     );
     wp_localize_script( 'MSJ-script', 'MSJ', $translation_array );
-
-    wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
   }
   add_action( 'wp_enqueue_scripts', 'MSJ_scripts' );
 
@@ -100,16 +99,16 @@
      'after_title'   => '' ));
 
   //editor style
-  add_editor_style('assets/wp-admin/custom-editor-style.css');
+  add_editor_style('assets/css/editor.css');
 
   //login page style
   function MSJ_loginCSS() {
-	   echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/assets/img/wp-login.css"/>';
+	   echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/assets/css/login.css"/>';
   } add_action('login_head', 'MSJ_loginCSS');
 
   //footer attribution
   function MSJ_footer_admin () {
-	   echo 'Theme developed by <a href="http://pateason.com">Pat Eason</a>.';
+	   echo 'Theme developed by <a href="http://meshfresh.com">MESH Design & Development</a>.';
   } add_filter('admin_footer_text', 'MSJ_footer_admin');
 
   //disable code editors
