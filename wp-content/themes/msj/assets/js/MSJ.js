@@ -1,7 +1,4 @@
 jQuery(document).ready(function($){
-  //Are we loaded?
-  console.log('hell yeah');
-
   //Typekit
   try{Typekit.load();}catch(e){}
 
@@ -12,7 +9,7 @@ jQuery(document).ready(function($){
     $('.expand-pane').removeClass('active');
     $(this).addClass('active');
     $(this).find('.title').slideUp(300);
-    $(this).find('.expansion').slideDown(300,function(){resizeScrollCont();console.log('resized!');});
+    $(this).find('.expansion').slideDown(300,function(){resizeScrollCont();});
   });
 
   //Home Story slide and layout
@@ -22,7 +19,7 @@ jQuery(document).ready(function($){
       top:-newPos,
     },300);
   }
-  $('.expansion .exp-col').hover(function(){
+  $('.expand-pane.blue .expansion .exp-col').hover(function(){
     logoSlide($(this).index());
   },function(){
     $('#showTrack').stop().animate({
@@ -53,7 +50,7 @@ jQuery(document).ready(function($){
       top:-curPos.top,
     },1000);
   }
-  $('.exp-col,.home-story-next').click(function(){
+  $('.expand-pane.blue .exp-col,.home-story-next').click(function(){
     nextStory($(this).attr('data-next'));
   });
   $('body.home a[href="'+MSJ.home_url+'"]').click(function(e){
@@ -63,15 +60,12 @@ jQuery(document).ready(function($){
 
   //Staff
   $(document).on('click','.staff-member:not(.active)',function(){
-    console.log('triggered');
     //set active
     $('.staff-member').removeClass('active');
     $(this).addClass('active');
-
     //clone content
     var content = $(this).find('.staff-member-bio').text();
     $(this).parent().find('.staff-exp .gutter').text(content);
-
     //trigger section
     if(!$(this).parent().find('.staff-exp').is(':visible')){
       $('.staff-exp').slideUp(300);

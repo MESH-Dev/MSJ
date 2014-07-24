@@ -21,7 +21,7 @@
     wp_enqueue_script('typekit-lib','//use.typekit.net/xcm6wss.js');
     wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
   	wp_enqueue_style( 'MSJ-style', get_template_directory_uri().'/assets/prod/production.min.css');
-  	wp_enqueue_script( 'MSJ-script', get_template_directory_uri().'/assets/prod/MSJ.min.js', array('jquery'), '1.0.0', true );
+  	wp_enqueue_script( 'MSJ-script', get_template_directory_uri().'/assets/prod/MSJ.min.js', array('jquery'), '1.0.1', true );
     $translation_array = array(
       'home_url' => home_url('/'),
       'ajax_url' => admin_url('admin-ajax.php')
